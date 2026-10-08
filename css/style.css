@@ -1,0 +1,231 @@
+/* сброс стилей по умолчанию */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* общие стили */
+body {
+    font-family: Arial, Helvetica, sans-serif; /* шрифт  */
+    background-color: #fdf6ec; /* цвет фона  */
+    color: #3e2723; /*  цвет текста */
+    line-height: 1.6; /* межстрочный истервал  */
+}
+
+/* шапка сайта */
+.header {
+    display: flex; /* дочерние элементы
+     встают в ряд  */
+    justify-content: space-between; 
+    /* распределяет элементы по 
+    горизонтали по углам  */
+    align-items: center;
+    /* выравниваем по вертикали по центру  */
+    padding: 20px 40px 20px 40px;
+    /* внутренний отступ 20px сверху снизу
+     40px справа слева */
+    background-color: #826c4a;
+    color:#fff;
+}
+
+.logo {
+    font-size: 24px; /* размер шрифта  */
+    font-weight: bold; /* жирный шрифт  */
+}
+
+.menu a{
+    text-decoration: none;/* убирает 
+    почеркивание ссылки  */
+    color:white;
+    margin-left:20px; /* отступ слева  */
+    font-size: 16px;
+    transition: color 0.3s;
+    /* плавное изменеине цвета */
+}
+
+.menu a:hover{
+    /* стили при наведении мыши */
+    color:rgb(211, 147, 0);
+}
+
+/* Баннер */
+.banner {
+    /* картинка как фон секции */
+    background-image: url('images/banner.jpg');
+    /* растянуть картинку на всю секцию */
+    background-size: cover;
+    /* высота баннера */
+    height: 600px;
+    /* центрировать изображение */
+    background-position: center;
+
+    /* для текста на баннере */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    color: #fff;
+    padding: 20px;
+}
+
+.btn {
+    background-color: #d6d0c9;
+    color:#541b0584;
+    padding: 15px 30px;
+    border-radius: 15px;
+    text-decoration:none;
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color:rgb(71, 25, 12);
+    color: #fff;
+}
+
+.banner h1{
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.banner p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* блок о нас */
+.about{
+    display: flex;      
+    align-items: center;
+    gap: 40px;
+    max-width: 1100px;
+    padding: 60px 40px;
+}
+
+.about img{
+    width: 350px;
+    border-radius: 15px;
+    margin-right: -250px;
+}
+
+.about-text h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.about-text p{
+    font-size: 20px;
+}
+
+/* меню */
+.menu1{
+    text-align: center;
+}
+
+.menu1 h2{
+    font-weight: bold;
+    font-style: bold;
+    font-size: 36px;
+    color: #3e2723;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: #f5d9b584;
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3{
+    font-weight: bold;
+    font-style: bold;
+    font-size: 20px;
+    color: #3e2723;
+    text-align: center;
+}
+
+.card p{
+    font-size: 20px;
+    text-align: center;
+    color: #4b3430;
+}
+
+.price{
+    font-weight: bold;
+    font-style: bold;
+    font-size: 20px;
+    color: #3e2723;
+    text-align: center;
+}
+
+
+/*форма записи*/
+.form-section{  
+    padding: 60px 60px;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 30px auto 0;
+}
+
+.form input{
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+}
+
+.form input:focus{
+    outline: 2px solid red;
+}
+
+.form h2{
+    padding: 60px 60px;
+    text-align: center;
+}
+
+/*подвал сайта*/
+.site-footer {
+    margin-top: 25px;
+    background-color: #2e0606;  
+    padding: 20px;              /* Отступы вокруг текста */
+    text-align: center;         /* Выравнивание по центру */
+    font-size: 14px;            /* Размер шрифта */
+    color: #333;                /* Тёмно-серый текст */
+}
+
+.site-footer p{
+    margin-top: 10px;
+    color: white;
+}
+
+.site-footer a{
+    text-decoration: none;/* убирает 
+    почеркивание ссылки  */
+    color:rgb(231, 163, 107);
+    margin-left:20px; /* отступ слева  */
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.site-footer a:hover{
+    color:rgb(239, 215, 190);
+}
