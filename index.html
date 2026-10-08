@@ -4,38 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>bakery</title>
+    <title>Пекарня</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Bakery</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">О нас</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Записаться на дегустацию</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Поиск</button>
-                    </form>
-                </div>
-            </div>
+    <header class="header">
+        <div class="logo">Bakery</div>
+
+        <nav class="menu">
+            <a href="">О нас</a>
+            <a href="">Меню</a>
+            <a href="">Контакты</a>
         </nav>
     </header>
+
+    <section class="banner">
+        <h1>Лучшая выпечка в городе</h1>
+        <p>Хлеб, к которому хочется возвращаться</p>
+        <a class="btn" href="#menu1">Смотреть меню</a>
+    </section>
+
+    <section class="about">
+        <div class="about-text">
+            <h2>О нас</h2>
+            <p>Мы — небольшая пекарня, где каждый день готовят свежий хлеб и выпечку с любовью. Используем качественные ингредиенты, бережно относимся к традициям и верим: хорошая выпечка делает день теплее. Заходите за любимыми вкусами, ароматом свежего хлеба и уютом, который хочется разделить.</p>
+        </div>
+        <img src="" alt="Наш пекарь">
+    </section>
+
+    <section class="menu1">
+        <h2>Наше меню</h2>
+        <div class="cards"> 
+            <div class="card">
+                <!--1 карточка-->
+                <img src="" alt="карточка">
+                <h3></h3>
+                <p></p>
+                <span class='price'></span>
+            </div>
+
+            <div class="card">
+                <!--2 карточка-->
+                <img src="" alt="карточка">
+                <h3></h3>
+                <p></p>
+                <span class="price"></span>
+            </div>
+
+            <div class="card">
+                <!--3 карточка-->
+                <img src="" alt="карточка">
+                <h3></h3>
+                <p></p>
+                <span class="price"></span>
+            </div>
+        </div>
+    </section>
+
+    <!--форма записи-->
+    <section class="form-section">
+        <h2>Запись на дегустацию</h2>
+        <form action="" method="" class="form">
+            <input type="text" placeholder="Ваше имя">
+            <input type="email" placeholder="Ваша почта">
+            <input type="tel" placeholder="Ваш телефон">
+            <button class="btn">Отправить заявку</button>
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <nav>
+            <a href="/contact">тел: 123967124</a>
+            <a href="/Telegram">tg: Bakery</a>
+            <a href="/VK">vk: Bakery</a>
+            <a href="/Instagram">inst: Bakery</a>
+        </nav>
+        <p>© 2026 Bakery. Все права защищены.</p>
+    </footer>
 </body>
 
 </html>
